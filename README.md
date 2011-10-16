@@ -23,4 +23,4 @@ To test it in local, you will need to register the new client application on the
       :website => 'http://0.0.0.0:3000'
     )
 
-You will then need to use the generated `identifier` and `secret_key` in the client application's omniauth initializer.
+You will then need to use the generated `identifier` and `secret` in the client application's omniauth initializer.
