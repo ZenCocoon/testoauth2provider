@@ -9,3 +9,11 @@
   <p><%= link_to 'Sign In',  new_user_session_path %></p>
   <p><%= link_to 'Sign Up',  new_user_registration_path %></p>
 <%- end -%>
+
+<h2>Registered Client Applications</h2>
+<p>This informations are only shared for test purpose, they should keep secret in production situation.</p>
+<%- Devise::Oauth2Providable::Client.find_each |client| -%>
+  <pre>
+  <%= client.to_yaml %>
+  </pre>
+<%- end -%>
