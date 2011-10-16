@@ -15,7 +15,7 @@
 <%- Devise::Oauth2Providable::Client.find_each do |client| -%>
   <pre>
   <%- %w( name redirect_uri website identifier secret ).each do |attribute|  -%>
-    <%= client.send(attribute) %>
+    <%= attribute + ': ' + client.send(attribute) %>
   <%- end -%>
   </pre>
 <%- end -%>
