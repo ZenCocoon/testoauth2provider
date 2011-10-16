@@ -12,7 +12,7 @@
 
 <h2>Registered Client Applications</h2>
 <p>This informations are only shared for test purpose, they should keep secret in production situation.</p>
-<%- Devise::Oauth2Providable::Client.find_each |client| -%>
+<%- Devise::Oauth2Providable::Client.find_each do |client| -%>
   <pre>
   <%= client.to_yaml %>
   </pre>
