@@ -14,6 +14,8 @@
 <p>This informations are only shared for test purpose, they should keep secret in production situation.</p>
 <%- Devise::Oauth2Providable::Client.find_each do |client| -%>
   <pre>
-  <%= client.to_yaml %>
+  <%- %w( name redirect_uri website identifier secret ).each do |attribute|  -%>
+    <%= client.send(attribute) %>
+  <%- end -%>
   </pre>
 <%- end -%>
