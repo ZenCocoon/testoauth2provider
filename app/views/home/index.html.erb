@@ -1,10 +1,11 @@
 <h1>OAuth 2 Provider Test Application <a href="https://github.com/ZenCocoon/testoauth2provider">Source</a></h1>
 <p>To be tested with a <a href="http://testoauth2client.heroku.com">OAuth 2 Client Test Application</a></p>
+
 <%- if current_user -%>
-<p>Currently logged-in with <%= current_user.email %></p>
-<p><%= link_to 'Me', me_path %></p>
-<p><%= link_to 'Sign Out', destroy_user_session_path, :method => 'delete' %></p>
+  <p>Currently logged-in with <%= current_user.email %></p>
+  <p><%= link_to 'Me', me_path %> (User details shared with the client application)</p>
+  <p><%= link_to 'Sign Out', destroy_user_session_path, :method => 'delete' %></p>
 <%- else -%>
-<p><%= link_to 'Sign In',  new_user_session_path %></p>
-<p><%= link_to 'Sign Up',  new_user_registration_path %></p>
+  <p><%= link_to 'Sign In',  new_user_session_path %></p>
+  <p><%= link_to 'Sign Up',  new_user_registration_path %></p>
 <%- end -%>

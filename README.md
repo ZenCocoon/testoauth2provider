@@ -2,6 +2,12 @@
 
 A sample OAuth 2 Provider application using Rails 3.1, Devise and Devise OAuth 2 Providable
 
+# Apps & Gems sources
+
+* https://github.com/ZenCocoon/testoauth2provider
+* https://github.com/ZenCocoon/testoauth2client
+* https://github.com/ZenCocoon/omniauth-testoauth2strategy
+
 # Live Applications
 
 * OAuth 2 Provider Test App: https://testoauth2provider.herokuapp.com
