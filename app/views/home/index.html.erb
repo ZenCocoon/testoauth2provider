@@ -11,7 +11,8 @@
 <%- end -%>
 
 <h2>Registered Client Applications</h2>
-<p>This informations are only shared for test purpose, they should keep secret in production situation.</p>
+<p class="info">INFO: When creating a new OAuth client application, you need to register it on the providers application.</p>
+<p class="warning">WARNING: This is only shared for test purposes, they should be kept secret in production situation.</p>
 <%- Devise::Oauth2Providable::Client.find_each do |client| -%>
   <pre>
   <%- %w( name redirect_uri website identifier secret ).each do |attribute|  -%>
