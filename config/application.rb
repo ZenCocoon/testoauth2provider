@@ -56,7 +56,6 @@ module TestOAuth2Provider
     # parameters by using an attr_accessible or attr_protected declaration.
     #
     # FIXME: Needs https://github.com/socialcast/devise_oauth2_providable/pull/39 to be merged
-    #
     # config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
@@ -64,8 +63,5 @@ module TestOAuth2Provider
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-
-    # Heroku config
-    # config.assets.initialize_on_precompile = false
   end
 end
