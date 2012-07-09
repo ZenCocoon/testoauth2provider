@@ -1,6 +1,6 @@
 # OAuth 2 Provider Test Application
 
-A sample OAuth 2 Provider application using Rails 3.1, Devise and Devise OAuth 2 Providable
+A sample OAuth 2 Provider application using Rails 3.2, Devise and Devise OAuth 2 Providable
 
 # Apps & Gems sources
 
