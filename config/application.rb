@@ -54,9 +54,7 @@ module TestOAuth2Provider
     # This will create an empty whitelist of attributes available for mass-assignment for all models
     # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
     # parameters by using an attr_accessible or attr_protected declaration.
-    #
-    # FIXME: Needs https://github.com/socialcast/devise_oauth2_providable/pull/39 to be merged
-    # config.active_record.whitelist_attributes = true
+    config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
     config.assets.enabled = true
